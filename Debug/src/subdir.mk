@@ -4,19 +4,19 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../src/Exercise7.cpp \
+../src/Exercise8.cpp \
 ../src/OptChars.cpp \
 ../src/OptWord.cpp \
 ../src/Options.cpp 
 
 OBJS += \
-./src/Exercise7.o \
+./src/Exercise8.o \
 ./src/OptChars.o \
 ./src/OptWord.o \
 ./src/Options.o 
 
 CPP_DEPS += \
-./src/Exercise7.d \
+./src/Exercise8.d \
 ./src/OptChars.d \
 ./src/OptWord.d \
 ./src/Options.d 
