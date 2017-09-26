@@ -8,10 +8,10 @@ OptWord opt2;
 
 int main(int argc, char** argv) {
 	try {
-		string validOpt = "abo";
-		//number of valid options.
 		int WordArgs;
 		int i = 2;
+		string validOpt = "abo";
+		//number of valid options.
 		string validWords[i];
 		validWords[0] = "log";
 		validWords[1] = "help";
@@ -24,9 +24,9 @@ int main(int argc, char** argv) {
 
 
 		//test if the WORDS are set by the programmer
-		for (int j; j <= i; j++) {
-			if (validWords[i].length() == 0) {
-				throw 1;
+		for (int j = 0; j < i; j++) {
+			if (validWords[j].length() == 0) {
+				throw 2;
 			}
 		}
 
@@ -84,7 +84,7 @@ int main(int argc, char** argv) {
 	} catch (int x) {
 		cout << "ErrorID: " << x << endl;
 	} catch (exception &s) {
-		cout << s.what() << endl;
+		cout << "exception found: " << s.what() << endl;
 	} catch (...) {
 		cout << "something went wrong" << endl;
 	}
